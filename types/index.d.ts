@@ -1,3 +1,6 @@
+import { IconType } from "react-icons"
+import FAIcons from "react-icons/fa"
+
 export type NavItem = {
   title: string
   href: string
@@ -10,7 +13,7 @@ export type SidebarNavItem = {
   title: string
   disabled?: boolean
   external?: boolean
-  icon?: keyof typeof Icons
+  icon?: IconType
 } & (
     | {
       href: string;

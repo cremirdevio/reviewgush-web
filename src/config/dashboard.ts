@@ -1,16 +1,9 @@
+import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
   mainNav: [
-    {
-      title: "Documentation",
-      href: "/docs",
-    },
-    {
-      title: "Support",
-      href: "/support",
-      disabled: true,
-    },
+
   ],
   sidebarNav: [
     {
@@ -20,12 +13,12 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Forms",
       href: "/account/forms",
-      icon: "forms",
+      icon: FaWpforms,
     },
     {
       title: "Import Reviews",
       href: "/account/import-reviews",
-      icon: "reviews",
+      icon: FaCloudDownloadAlt,
     },
 
     {
@@ -35,27 +28,27 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Reviews",
       href: "/account/reviews",
-      icon: "reviews",
+      icon: FaThumbsUp,
     },
     {
       title: "Search",
       href: "/account/search-reviews",
-      icon: "search",
+      icon: FaSearch,
     },
     {
       title: "Tags",
       href: "/account/tags",
-      icon: "search",
+      icon: FaTags,
     },
     {
       title: "Integrations",
       href: "/account/integrations",
-      icon: "search",
+      icon: FaPlug,//fa-puzzle-piece, plug, link, share-alt
     },
     {
       title: "Analytics",
       href: "/account/analytics",
-      icon: "search",
+      icon: FaChartArea,
     },
 
     {
@@ -65,27 +58,22 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Widgets",
       href: "/account/widgets",
-      icon: "reviews",
+      icon: FaTh,
     },
     {
       title: "Landing Page",
       href: "/account/landing-page",
-      icon: "search",
-    },
-    {
-      title: "Tags",
-      href: "/account/tags",
-      icon: "search",
+      icon: FaGlobe,
     },
     {
       title: "Social Sharing",
       href: "/account/social-sharing",
-      icon: "search",
+      icon: FaShare,
     },
     {
       title: "Custom Domain",
       href: "/account/custom-domain",
-      icon: "search",
+      icon: FaLink,
     },
 
     // Might move settings to just one page
@@ -127,27 +115,27 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Knowledge Base",
       href: "/account/knowledge-base",
-      icon: "reviews",
+      icon: FaQuestion,
     },
     {
       title: "FAQ",
       href: "/account/faq",
-      icon: "search",
+      icon: FaCommentAlt,
     },
     {
       title: "Support Ticket",
       href: "/account/support",
-      icon: "search",
+      icon: FaTicketAlt,
     },
     {
       title: "Community",
       href: "/account/community-forum",
-      icon: "search",
+      icon: FaUsers,
     },
     {
       title: "Contact Us",
       href: "/account/contact-us",
-      icon: "search",
+      icon: FaAddressCard,
     },
   ],
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from './ui/link'
-import { HStack, Heading, Icon, Text } from '@chakra-ui/react'
-import { FaHome } from 'react-icons/fa'
+import { HStack, Heading, Icon, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
+import { FaExternalLinkAlt, FaHome, FaIcons } from 'react-icons/fa'
 import { SidebarNavItem } from '@/types'
 
 interface SideNavLinkProp {
@@ -15,13 +15,20 @@ export default function SideNavLink({ navItem }: SideNavLinkProp) {
     }
 
     return (
-        <Link textDecoration={"none"} href={navItem.href}>
+        <LinkBox textDecoration={"none"}>
             <HStack _hover={{
-                bgColor: "green.100", borderRadius: "md"
+                bgColor: "green.100",
+                borderRadius: "md",
+                textDecoration: "none"
             }} py={"4px"} pl={"8px"}>
-                <Icon as={FaHome} />
-                <Text>{navItem.title}</Text>
+                <Icon as={navItem.icon} />
+                <LinkOverlay href={navItem.href}>
+                    <Text>
+                        {navItem.title} 
+                        {navItem.external && <Icon as={FaExternalLinkAlt} boxSize={"3"} color={"gray"} />}
+                    </Text>
+                </LinkOverlay>
             </HStack>
-        </Link>
+        </LinkBox>
     )
 }

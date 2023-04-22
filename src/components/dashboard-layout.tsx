@@ -8,9 +8,13 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <Stack>
+    <Stack direction={["column", "row"]}>
         <SideNavigation />
-        {children}
+        <>
+          {/* Main Navigation */}
+          {children}
+          {/* Main Footer */}
+        </>
     </Stack>
   )
 }
