@@ -38,7 +38,7 @@ export default function Login() {
         <Spacer height={"32px"} />
 
         {/* Trouble Signing in */}
-        <Link>
+        <Link href={"/auth/forgot-password"}>
           <Text fontWeight={"bold"} fontSize={"sm"} mt={"16px"} mb={"12px"}>
             Forgot Password?
           </Text>

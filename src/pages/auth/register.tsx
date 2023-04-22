@@ -8,7 +8,7 @@ import Button from '@/src/components/ui/button'
 import Head from 'next/head'
 import Link from '@/src/components/ui/link'
 
-export default function Login() {
+export default function Register() {
   return (
     <AuthLayout>
       <Head>

@@ -59,7 +59,6 @@ export default function Button({ children, variant, ...rest }: CustomButtonProps
         <ChakraButton
             colorScheme={colorScheme}
             bg={bg}
-            borderCol
             _hover={{ bg: hoverBg, color: hoverTextColor }}
             _active={{ bg: activeBg, color: activeTextColor }}
             color={textColor}
