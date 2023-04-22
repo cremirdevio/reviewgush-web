@@ -9,7 +9,7 @@ interface NextChakraLinkProps extends ChakraLinkProps {
 export default function Link({ href, children, ...chakraProps }: NextChakraLinkProps) {
   return (
     <NextLink href={href ?? "#"} passHref>
-      <ChakraLink as={"div"} {...chakraProps}>{children}</ChakraLink>
+      <ChakraLink as={"span"} {...chakraProps}>{children}</ChakraLink>
     </NextLink>
   );
 }
