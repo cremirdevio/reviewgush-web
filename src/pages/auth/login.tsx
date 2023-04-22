@@ -10,9 +10,9 @@ import Button from '@/src/components/ui/button'
 export default function Login() {
   return (
     <AuthLayout>
-      <Container shadow={"2xl"} w={"md"} bg={"whiteAlpha.900"} borderRadius={'3xl'} height={"fit-content"} padding={"48px"}>
-        <Heading>Hi, Welcome Back!</Heading>
-        <Text fontSize={"sm"}>Start 14 day full-featured trial. No credit card required.</Text>
+      <Container shadow={["none", "2xl"]} w={["full", "md"]} bg={"whiteAlpha.900"} borderRadius={["none", "3xl"]} height={"fit-content"} px={["24px", "48px"]} py={["48px"]}>
+        <Heading fontSize={"2xl"}>Hi, Welcome Back!</Heading>
+        {/* <Text fontSize={"sm"}>Start 14 day full-featured trial. No credit card required.</Text> */}
         <Spacer height={"32px"} />
 
         {/* Enter Email/Phone no */}
@@ -30,6 +30,7 @@ export default function Login() {
         <Checkbox size='lg' colorScheme={"orange"}>
           Keep me signed in
         </Checkbox>
+        <Spacer height={"32px"} />
 
         {/* Trouble Signing in */}
         <Link>
@@ -44,13 +45,12 @@ export default function Login() {
         {/* Line: or sign in with */}
         <HStack mt={"16px"} mb={"16px"} justifyContent={"center"} alignItems={"center"}>
           <Box height={"1px"} width={"20px"} bgColor={"black"} />
-          <Text>Or Sign in with</Text>
+          <Text fontSize={"xs"}>Or Sign in with</Text>
           <Box height={"1px"} width={"20px"} bgColor={"black"} />
         </HStack>
 
         {/* Google/Facebook/Apple */}
-        <HStack>
-          <Button leftIcon={<FaFacebook />} fontWeight={"bold"} variant={"outline"}>Facebook</Button>
+        <HStack justifyContent={"center"}>
           <Button leftIcon={<FaGoogle />} fontWeight={"bold"} variant={"outline"}>Google</Button>
           <Button leftIcon={<FaApple />} fontWeight={"bold"} variant={"outline"}>Apple</Button>
         </HStack>
