@@ -13,7 +13,8 @@ export default function Button({ children, variant, ...rest }: CustomButtonProps
     let textColor;
     let hoverTextColor;
     let activeTextColor;
-    let border;
+    let borderWidth;
+    let borderColor;
 
     switch (variant) {
         case "primary":
@@ -35,14 +36,15 @@ export default function Button({ children, variant, ...rest }: CustomButtonProps
             activeTextColor = "white";
             break;
         case "outline":
-            colorScheme = "gray";
+            colorScheme = "orange";
             bg = "transparent";
-            hoverBg = "gray.100";
-            activeBg = "gray.200";
-            textColor = "gray.700";
-            hoverTextColor = "gray.900";
-            activeTextColor = "gray.900";
-            border = "1px solid gray";
+            hoverBg = "orange.100";
+            activeBg = "orange.200";
+            textColor = "orange.700";
+            hoverTextColor = "orange.900";
+            activeTextColor = "orange.900";
+            borderWidth = "1px";
+            borderColor = "orange.500";
             break;
         default:
             colorScheme = "gray";
@@ -62,7 +64,8 @@ export default function Button({ children, variant, ...rest }: CustomButtonProps
             _hover={{ bg: hoverBg, color: hoverTextColor }}
             _active={{ bg: activeBg, color: activeTextColor }}
             color={textColor}
-            border={border}
+            borderWidth={borderWidth}
+            borderColor={borderColor}
             {...rest}
         >
             {children}
