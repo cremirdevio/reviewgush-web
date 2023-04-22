@@ -15,7 +15,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         {children}
         {/* Copyright */}
         <Spacer maxH={"48px"} />
-        <Text>Copyright &copy; ReviewGush 2023 | Privacy Policy</Text>
+        <Text>Copyright &copy; ReviewGush {new Date().getFullYear()} | Privacy Policy</Text>
     </Flex>
   )
 }
