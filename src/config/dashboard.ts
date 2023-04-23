@@ -31,11 +31,6 @@ export const dashboardConfig: DashboardConfig = {
       icon: FaThumbsUp,
     },
     {
-      title: "Search",
-      href: "/account/search-reviews",
-      icon: FaSearch,
-    },
-    {
       title: "Tags",
       href: "/account/tags",
       icon: FaTags,

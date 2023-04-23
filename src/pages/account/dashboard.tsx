@@ -11,7 +11,6 @@ import NotFound from '@/src/components/dashboard/not-found';
 import ListReviews from '@/src/components/dashboard/reviews/list-reviews';
 
 export default function Dashboard() {
-    const { sideBarIsOpen, toggleSideBar } = useContext(NavigationContext);
     return (
         <DashboardLayout>
             <Box py={"24px"}>
@@ -33,7 +32,7 @@ export default function Dashboard() {
                     title="Not found" 
                     message="No reviews found matching this search!" 
                 /> */}
-                
+
                 {/* <NotFound 
                     title="Reviews List Empty" 
                     message="Reviews you collect will show up here. Already have reviews? Import them!" 

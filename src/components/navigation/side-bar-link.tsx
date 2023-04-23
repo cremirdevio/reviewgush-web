@@ -25,7 +25,7 @@ export default function SideNavLink({ navItem }: SideNavLinkProp) {
                 pl={"8px"}
                 gap={"4px"}
             >
-                <Icon as={navItem.icon} />
+                <Icon as={navItem.icon} color={"gray.500"} />
                 <LinkOverlay href={navItem.href}>
                     <Text>
                         {navItem.title}
