@@ -2,17 +2,22 @@ import DashboardLayout from '@/src/components/dashboard-layout'
 import Button from '@/src/components/ui/button'
 import FormInput from '@/src/components/ui/input';
 import { NavigationContext } from '@/src/contexts/navigation-context';
-import { Box, Checkbox, Flex, HStack, Heading, Icon, Table, TableContainer, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react'
+import { Avatar, Badge, Box, Center, Checkbox, Flex, HStack, Heading, Icon, Table, TableContainer, Tbody, Td, Text, Tfoot, Th, Thead, Tr, VStack } from '@chakra-ui/react'
+import { Player } from '@lottiefiles/react-lottie-player';
 import React, { useContext } from 'react'
-import { FaSearch } from 'react-icons/fa';
+import { FaEllipsisV, FaSearch } from 'react-icons/fa';
+import notFoundAnimation from '@/src/assets/animations/not_found.json'
+import NotFound from '@/src/components/dashboard/not-found';
+import ListReviews from '@/src/components/dashboard/reviews/list-reviews';
 
 export default function Dashboard() {
     const { sideBarIsOpen, toggleSideBar } = useContext(NavigationContext);
     return (
         <DashboardLayout>
             <Box py={"24px"}>
-                <HStack mb={"24px"}>
-                    <Heading>All Reviews</Heading>
+                <HStack mb={"24px"} justifyContent={"space-between"}>
+                    <Heading fontSize={["xl", "2xl"]}>Your Reviews</Heading>
+                    <Icon as={FaEllipsisV} />
                 </HStack>
 
                 {/* Search Reviews */}
@@ -22,39 +27,20 @@ export default function Dashboard() {
                 </Flex>
 
                 {/* List reviews in tables or grids */}
-                <TableContainer>
-                    <Table variant='simple'>
-                        <Thead>
-                            <Tr>
-                                <Th>
-                                    <Checkbox colorScheme='orange' />
-                                </Th>
-                                <Th>To convert</Th>
-                                <Th>into</Th>
-                                <Th isNumeric>multiply by</Th>
-                            </Tr>
-                        </Thead>
-                        <Tbody>
-                            <Tr>
-                                <Td>
-                                    <Checkbox colorScheme='orange' />
-                                </Td>
-                                <Td>inches</Td>
-                                <Td>millimetres (mm)</Td>
-                                <Td isNumeric>25.4</Td>
-                            </Tr>
-                        </Tbody>
-                        <Tfoot>
-                            <Tr>
-                                <Th>
-                                    <Checkbox colorScheme='orange'/>
-                                </Th>
-                                <Th>into</Th>
-                                <Th isNumeric>multiply by</Th>
-                            </Tr>
-                        </Tfoot>
-                    </Table>
-                </TableContainer>
+                <ListReviews />
+
+                {/* <NotFound 
+                    title="Not found" 
+                    message="No reviews found matching this search!" 
+                /> */}
+                
+                {/* <NotFound 
+                    title="Reviews List Empty" 
+                    message="Reviews you collect will show up here. Already have reviews? Import them!" 
+                    buttonText="Import Review"
+                    onButtonClick={() => {}}
+                /> */}
+
             </Box>
         </DashboardLayout>
     )

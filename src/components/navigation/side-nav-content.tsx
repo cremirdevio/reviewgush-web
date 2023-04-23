@@ -12,7 +12,7 @@ export default function SideNavigationContent({ width = ["300px"], maxWidth } : 
         <Flex width={width} maxW={maxWidth} maxH={"100vh"} height={"100vh"} flexDir={"column"} alignItems={"flex-start"} justifyContent={"space-between"} borderRight={"1px"} borderColor={"gray.200"} bg={"white"}>
             <Box px={"16px"} py={"24px"} width={"full"} overflowY={"auto"} >
                 {/* Side Navigation Header */}
-                <HStack>
+                <HStack pos={"sticky"} top={0} bg={"white"} pb={"2"}>
                     <Avatar
                         size='md'
                         name='Joseph Ajibodu'
@@ -41,7 +41,7 @@ export default function SideNavigationContent({ width = ["300px"], maxWidth } : 
                 </HStack>
 
                 {/* Side Navigation Body */}
-                <Flex flexDir={"column"} my={"8"}>
+                <Flex flexDir={"column"} my={"0"}>
                     {dashboardConfig.sidebarNav.map((sideBarItem) => <SideNavLink navItem={sideBarItem} key={sideBarItem.title} />)}
                 </Flex>
             </Box>

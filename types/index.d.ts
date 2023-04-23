@@ -40,3 +40,4 @@ export type DashboardConfig = {
   mainNav: MainNavItem[]
   sidebarNav: SidebarNavItem[]
 }
+
