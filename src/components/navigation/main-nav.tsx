@@ -5,7 +5,7 @@ import { MdMenu, MdMenuOpen } from 'react-icons/md'
 import { NavigationContext } from '@/src/contexts/navigation-context'
 
 export default function MainNavigation() {
-  const [isLargerThanMobile] = useMediaQuery("(min-width: 480px)")
+  const [isLargerThanMobile] = useMediaQuery("(min-width: 800px)")
   const { toggleSideBar } = useContext(NavigationContext)
 
   return (

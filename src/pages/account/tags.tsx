@@ -33,7 +33,7 @@ export default function Tags() {
                 <HStack mb={"24px"} justifyContent={"space-between"}>
                     <VStack alignItems={"flex-start"}>
                         <Heading fontSize={["xl", "2xl"]}>Available Tags</Heading>
-                        <Text fontSize={"md"} color={"gray.500"}>Tags help you organize your testimonials.</Text>
+                        <Text fontSize={"md"} color={"gray.500"}>Tags help you organize your reviews.</Text>
                     </VStack>
                     
                     <Button variant='primary' leftIcon={<Icon as={FaPlus} />}>New Tag</Button>

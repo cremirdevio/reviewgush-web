@@ -7,7 +7,7 @@ import SideNavigationContent from './side-nav-content'
 import { NavigationContext } from '@/src/contexts/navigation-context'
 
 export default function SideNavigation() {
-    const [isLargerThanMobile] = useMediaQuery("(min-width: 480px)")
+    const [isLargerThanMobile] = useMediaQuery("(min-width: 800px)")
     const { sideBarIsOpen, toggleSideBar } = useContext(NavigationContext);
 
     if (isLargerThanMobile) return (

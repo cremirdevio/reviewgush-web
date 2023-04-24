@@ -12,17 +12,17 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <Stack direction={["column", "row"]}>
         <SideNavigation />
-        <Box width={"full"}>
+        <Box width={"full"} height={["max-content", "100vh"]} overflowY={"auto"}>
           {/* Main Navigation */}
           <MainNavigation />
 
           {/* Main Body */}
-          <Box px={["6", "10"]}>
+          <Box px={["6", "10"]} >
             {children}
           </Box>
 
           {/* Main Footer */}
-          <MainFooter />
+          {/* <MainFooter /> */}
         </Box>
     </Stack>
   )
