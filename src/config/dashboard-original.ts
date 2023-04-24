@@ -1,5 +1,4 @@
 import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
-import { MdMail, MdAnalytics, MdCloudDownload, MdContactSupport, MdDomain, MdExtension, MdGroup, MdLabel, MdLibraryBooks, MdQuestionAnswer, MdSelectAll, MdShare, MdThumbUp, MdWeb, MdWidgets } from 'react-icons/md';
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
@@ -14,12 +13,12 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Forms",
       href: "/account/forms",
-      icon: MdSelectAll,
+      icon: FaWpforms,
     },
     {
       title: "Import Reviews",
       href: "/account/import-reviews",
-      icon: MdCloudDownload,
+      icon: FaCloudDownloadAlt,
     },
 
     {
@@ -29,22 +28,22 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Reviews",
       href: "/account/reviews",
-      icon: MdThumbUp,
+      icon: FaThumbsUp,
     },
     {
       title: "Tags",
       href: "/account/tags",
-      icon: MdLabel,
+      icon: FaTags,
     },
     {
       title: "Integrations",
       href: "/account/integrations",
-      icon: MdExtension,
+      icon: FaPlug,//fa-puzzle-piece, plug, link, share-alt
     },
     {
       title: "Analytics",
       href: "/account/analytics",
-      icon: MdAnalytics,
+      icon: FaChartArea,
     },
 
     {
@@ -54,22 +53,22 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Widgets",
       href: "/account/widgets",
-      icon: MdWidgets,
+      icon: FaTh,
     },
     {
       title: "Landing Page",
       href: "/account/landing-page",
-      icon: MdWeb,
+      icon: FaGlobe,
     },
     {
       title: "Social Sharing",
       href: "/account/social-sharing",
-      icon: MdShare,
+      icon: FaShare,
     },
     {
       title: "Custom Domain",
       href: "/account/custom-domain",
-      icon: MdDomain,
+      icon: FaLink,
     },
 
     // Might move settings to just one page
@@ -111,27 +110,27 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Knowledge Base",
       href: "/account/knowledge-base",
-      icon: MdLibraryBooks,
+      icon: FaQuestion,
     },
     {
       title: "FAQ",
       href: "/account/faq",
-      icon: MdQuestionAnswer,
+      icon: FaCommentAlt,
     },
     {
       title: "Support Ticket",
       href: "/account/support",
-      icon: MdContactSupport,
+      icon: FaTicketAlt,
     },
     {
       title: "Community",
       href: "/account/community-forum",
-      icon: MdGroup,
+      icon: FaUsers,
     },
     {
       title: "Contact Us",
       href: "/account/contact-us",
-      icon: MdMail,
+      icon: FaAddressCard,
     },
   ],
 }
@@ -184,3 +183,4 @@ export const dashboardConfig: DashboardConfig = {
 
 // User Voice
 // Feature Requests
+

@@ -2,7 +2,7 @@ import { Avatar, Box, BoxProps, Drawer, DrawerContent, DrawerOverlay, Flex, HSta
 import React from 'react'
 import { FaChevronDown, FaChevronUp, FaHome } from 'react-icons/fa'
 import SideNavLink from './side-bar-link'
-import { dashboardConfig } from '@/src/config/dashboard'
+import { dashboardConfig } from '@/src/config/dashboard-outline'
 
 type SideNavigationContentProps = Pick<BoxProps, 'width' | 'maxWidth'>;
 

@@ -1,5 +1,5 @@
 import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
-import { MdMail, MdAnalytics, MdCloudDownload, MdContactSupport, MdDomain, MdExtension, MdGroup, MdLabel, MdLibraryBooks, MdQuestionAnswer, MdSelectAll, MdShare, MdThumbUp, MdWeb, MdWidgets } from 'react-icons/md';
+import { MdMailOutline, MdOutlineAnalytics, MdOutlineCloudDownload, MdOutlineContactSupport, MdOutlineDomain, MdOutlineExtension, MdOutlineGroup, MdOutlineLabel, MdOutlineLibraryBooks, MdOutlineQuestionAnswer, MdOutlineSelectAll, MdOutlineShare, MdOutlineThumbUp, MdOutlineWeb, MdOutlineWidgets } from 'react-icons/md';
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
@@ -14,12 +14,12 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Forms",
       href: "/account/forms",
-      icon: MdSelectAll,
+      icon: MdOutlineSelectAll,
     },
     {
       title: "Import Reviews",
       href: "/account/import-reviews",
-      icon: MdCloudDownload,
+      icon: MdOutlineCloudDownload,
     },
 
     {
@@ -29,22 +29,22 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Reviews",
       href: "/account/reviews",
-      icon: MdThumbUp,
+      icon: MdOutlineThumbUp,
     },
     {
       title: "Tags",
       href: "/account/tags",
-      icon: MdLabel,
+      icon: MdOutlineLabel,
     },
     {
       title: "Integrations",
       href: "/account/integrations",
-      icon: MdExtension,
+      icon: MdOutlineExtension,
     },
     {
       title: "Analytics",
       href: "/account/analytics",
-      icon: MdAnalytics,
+      icon: MdOutlineAnalytics,
     },
 
     {
@@ -54,22 +54,22 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Widgets",
       href: "/account/widgets",
-      icon: MdWidgets,
+      icon: MdOutlineWidgets,
     },
     {
       title: "Landing Page",
       href: "/account/landing-page",
-      icon: MdWeb,
+      icon: MdOutlineWeb,
     },
     {
       title: "Social Sharing",
       href: "/account/social-sharing",
-      icon: MdShare,
+      icon: MdOutlineShare,
     },
     {
       title: "Custom Domain",
       href: "/account/custom-domain",
-      icon: MdDomain,
+      icon: MdOutlineDomain,
     },
 
     // Might move settings to just one page
@@ -111,27 +111,27 @@ export const dashboardConfig: DashboardConfig = {
     {
       title: "Knowledge Base",
       href: "/account/knowledge-base",
-      icon: MdLibraryBooks,
+      icon: MdOutlineLibraryBooks,
     },
     {
       title: "FAQ",
       href: "/account/faq",
-      icon: MdQuestionAnswer,
+      icon: MdOutlineQuestionAnswer,
     },
     {
       title: "Support Ticket",
       href: "/account/support",
-      icon: MdContactSupport,
+      icon: MdOutlineContactSupport,
     },
     {
       title: "Community",
       href: "/account/community-forum",
-      icon: MdGroup,
+      icon: MdOutlineGroup,
     },
     {
       title: "Contact Us",
       href: "/account/contact-us",
-      icon: MdMail,
+      icon: MdMailOutline,
     },
   ],
 }

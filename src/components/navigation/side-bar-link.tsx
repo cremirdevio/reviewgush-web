@@ -21,7 +21,7 @@ export default function SideNavLink({ navItem }: SideNavLinkProp) {
                     borderRadius: "md",
                     textDecoration: "none"
                 }}
-                py={"4px"} 
+                py={"6px"} 
                 pl={"8px"}
                 gap={"4px"}
             >
