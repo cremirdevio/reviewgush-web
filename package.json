@@ -8,7 +8,8 @@
     "start": "next start",
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
-    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",
@@ -32,6 +33,7 @@
     "eslint-config-next": "^13.3.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.8"
   }
