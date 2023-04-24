@@ -11,7 +11,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
       py={[`0`]}
       flexDir={`column`}
       h={`100vh`}
-      bgColor={`orange.100`}
+      bgColor={`orange.50`}
       justifyContent={`center`}
       alignItems={`center`}
     >
