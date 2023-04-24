@@ -8,6 +8,7 @@ import PasswordInput from '@/src/components/ui/password-input'
 import Button from '@/src/components/ui/button'
 import Head from 'next/head'
 import Link from '@/src/components/ui/link'
+import Image from 'next/image'
 
 export default function ForgotPassword() {
   const [resetEmailSent, setResetEmailSent] = useState<Boolean>(false);
@@ -19,15 +20,20 @@ export default function ForgotPassword() {
       </Head>
 
       {!resetEmailSent ?
-        <Container shadow={["none", "2xl"]} w={["full", "md"]} bg={"whiteAlpha.900"} borderRadius={["none", "3xl"]} height={"fit-content"} px={["24px", "48px"]} py={["48px"]}>
-          <Heading fontSize={"2xl"}>Forgot Password?</Heading>
+        <Container shadow={["none", "2xl"]} w={["full", "md"]} bg={"whiteAlpha.900"} borderRadius={["none", "3xl"]} height={["full", "fit-content"]} px={["24px", "48px"]} py={["48px"]}>
+          {/* Logo Here */}
+          <Link href='/'>
+            <Image src={"/logo-icon-primary.svg"} width={"36"} height={"36"} alt="reviewgush logo" />
+          </Link>
+          <Spacer height={"16px"} />
+          
+          <Heading fontWeight={"normal"} fontSize={["2xl"]}>Forgot Password?</Heading>
           <Text fontSize={"sm"} mt={"8px"}>No worries, we&apos;ll send you reset instructions.</Text>
           <Spacer height={"32px"} />
 
           {/* Enter Email */}
           <FormInput
             type='email' placeholder='Enter your email' size={"lg"}
-            leftIcon={"@"}
           />
           <Spacer height={"12px"} />
 

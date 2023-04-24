@@ -10,7 +10,6 @@ export default function PasswordInput({ ...props }: InputProps) {
   return (
     <FormInput
         type={showPassword ? "text" : "password"} placeholder='Password' size={"lg"}
-        leftIcon={<Icon as={MdPassword} />}
         rightIcon={<Icon onClick={toggle} as={showPassword ? FaEyeSlash : FaEye} />}
         {...props}
     />

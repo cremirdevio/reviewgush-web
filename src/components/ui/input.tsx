@@ -12,7 +12,7 @@ export default function FormInput({ leftIcon: leftPart, rightIcon: rightPart, ..
     <FormControl>
         <InputGroup size={inputProps.size ?? "lg"}>
             {leftPart && <InputLeftElement>{leftPart}</InputLeftElement>}
-            <Input focusBorderColor={"orange.500"} {...inputProps} />
+            <Input focusBorderColor={"orange.500"} fontSize={["sm"]} {...inputProps} />
             {rightPart && <InputRightElement>{rightPart}</InputRightElement>}
         </InputGroup>
     </FormControl>

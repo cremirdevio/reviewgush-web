@@ -7,6 +7,7 @@ import PasswordInput from '@/src/components/ui/password-input'
 import Button from '@/src/components/ui/button'
 import Head from 'next/head'
 import Link from '@/src/components/ui/link'
+import Image from 'next/image'
 
 export default function Register() {
   return (
@@ -14,8 +15,14 @@ export default function Register() {
       <Head>
         <title>Register free ReviewGush account</title>
       </Head>
-      <Container shadow={["none", "2xl"]} w={["full", "md"]} bg={"whiteAlpha.900"} borderRadius={["none", "3xl"]} height={"fit-content"} px={["24px", "48px"]} py={["48px"]}>
-        <Heading fontSize={"2xl"}>Get Started Now</Heading>
+      <Container shadow={["none", "2xl"]} w={["full", "md"]} bg={"whiteAlpha.900"} borderRadius={["none", "3xl"]} height={["full", "fit-content"]} px={["24px", "48px"]} py={["48px"]}>
+        {/* Logo Here */}
+        <Link href='/'>
+          <Image src={"/logo-icon-primary.svg"} width={"36"} height={"36"} alt="reviewgush logo" />
+        </Link>
+        <Spacer height={"16px"} />
+
+        <Heading fontWeight={"normal"} fontSize={["2xl"]}>Get Started Now</Heading>
         <Text fontSize={"sm"} mt={"8px"}>Join ReviewGush to easily collect, manage and share your reviews.</Text>
         <Spacer height={"32px"} />
 
@@ -41,7 +48,7 @@ export default function Register() {
         <Spacer height={"12px"} />
 
         {/* Keep me signed in */}
-        <Checkbox size='lg' colorScheme={"orange"}>
+        <Checkbox size='md' color={"gray.700"} colorScheme={"orange"}>
           I agree with all service agreement
         </Checkbox>
         <Spacer height={"32px"} />
