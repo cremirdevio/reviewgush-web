@@ -22,17 +22,30 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Code Linting and Formatting
 
-To learn more about Next.js, take a look at the following resources:
+## Commit Convention
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Your commit message should be structured as follows:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+<type>[optional scope]: <description>
 
-## Deploy on Vercel
+[optional body]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[optional footer(s)]
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The commit contains the following structural elements, to communicate intent:
+
+1. **fix**: a commit of the type fix patches a bug in your codebase (this correlates with `PATCH` in Semantic Versioning).
+
+1. **feat**: a commit of the type feat introduces a new feature to the codebase (this correlates with `MINOR` in Semantic Versioning).
+
+1. **BREAKING CHANGE**: a commit that has a footer BREAKING CHANGE:, or appends a `!` after the _type/scope_, introduces a breaking API change (correlating with `MAJOR` in Semantic Versioning). A BREAKING CHANGE can be part of commits of any _type_.
+
+1. types other than `fix:` and `feat:` are allowed, for example `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, and others.
+
+1. footers other than BREAKING CHANGE: `description` may be provided and follow a convention similar to git trailer format.
+
+Check this out for more information [https://www.conventionalcommits.org/en/v1.0.0/#specification](https://www.conventionalcommits.org/en/v1.0.0/#specification)
