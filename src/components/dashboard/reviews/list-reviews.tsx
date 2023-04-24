@@ -12,9 +12,9 @@ import ReviewTableHeader from "./review-table-head";
 import SingleReviewCard from "./single-review-card";
 
 type ListReviewsVariant = "table" | "grid";
-interface ListReviewsProp {
-  variant?: ListReviewsVariant;
-}
+// interface ListReviewsProp {
+//   variant?: ListReviewsVariant;
+// }
 
 export default function ListReviews() {
   const columns = useBreakpointValue(
