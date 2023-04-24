@@ -1,34 +1,15 @@
-import {
-  Box,
-  Text,
-  HStack,
-  VStack,
-  Heading,
-  Container,
-  Spacer,
-  Checkbox,
-  Icon,
-  Flex,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
-import { MdFacebook, MdPassword } from "react-icons/md";
-import {
-  FaApple,
-  FaArrowLeft,
-  FaEye,
-  FaFacebook,
-  FaGoogle,
-} from "react-icons/fa";
+import { Text, Heading, Container, Spacer, Icon } from "@chakra-ui/react";
+import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 import AuthLayout from "@/src/components/auth-layout";
 import FormInput from "@/src/components/ui/input";
-import PasswordInput from "@/src/components/ui/password-input";
 import Button from "@/src/components/ui/button";
 import Head from "next/head";
 import Link from "@/src/components/ui/link";
 import Image from "next/image";
 
 export default function ForgotPassword() {
-  const [resetEmailSent, setResetEmailSent] = useState<boolean>(false);
+  const [resetEmailSent] = useState<boolean>(false);
 
   return (
     <AuthLayout>
