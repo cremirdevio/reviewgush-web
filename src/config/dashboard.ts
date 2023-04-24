@@ -1,74 +1,87 @@
-import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
-import { MdMail, MdAnalytics, MdCloudDownload, MdContactSupport, MdDomain, MdExtension, MdGroup, MdLabel, MdLibraryBooks, MdQuestionAnswer, MdSelectAll, MdShare, MdThumbUp, MdWeb, MdWidgets } from 'react-icons/md';
+import {
+  MdMail,
+  MdAnalytics,
+  MdCloudDownload,
+  MdContactSupport,
+  MdDomain,
+  MdExtension,
+  MdGroup,
+  MdLabel,
+  MdLibraryBooks,
+  MdQuestionAnswer,
+  MdSelectAll,
+  MdShare,
+  MdThumbUp,
+  MdWeb,
+  MdWidgets,
+} from "react-icons/md";
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
-  mainNav: [
-
-  ],
+  mainNav: [],
   sidebarNav: [
     {
-      title: "Collect",
-      isTitle: true
+      title: `Collect`,
+      isTitle: true,
     },
     {
-      title: "Forms",
-      href: "/account/forms",
+      title: `Forms`,
+      href: `/account/forms`,
       icon: MdSelectAll,
     },
     {
-      title: "Import Reviews",
-      href: "/account/import-reviews",
+      title: `Import Reviews`,
+      href: `/account/import-reviews`,
       icon: MdCloudDownload,
     },
 
     {
-      title: "Manage",
-      isTitle: true
+      title: `Manage`,
+      isTitle: true,
     },
     {
-      title: "Reviews",
-      href: "/account/reviews",
+      title: `Reviews`,
+      href: `/account/reviews`,
       icon: MdThumbUp,
     },
     {
-      title: "Tags",
-      href: "/account/tags",
+      title: `Tags`,
+      href: `/account/tags`,
       icon: MdLabel,
     },
     {
-      title: "Integrations",
-      href: "/account/integrations",
+      title: `Integrations`,
+      href: `/account/integrations`,
       icon: MdExtension,
     },
     {
-      title: "Analytics",
-      href: "/account/analytics",
+      title: `Analytics`,
+      href: `/account/analytics`,
       icon: MdAnalytics,
     },
 
     {
-      title: "Share",
-      isTitle: true
+      title: `Share`,
+      isTitle: true,
     },
     {
-      title: "Widgets",
-      href: "/account/widgets",
+      title: `Widgets`,
+      href: `/account/widgets`,
       icon: MdWidgets,
     },
     {
-      title: "Landing Page",
-      href: "/account/landing-page",
+      title: `Landing Page`,
+      href: `/account/landing-page`,
       icon: MdWeb,
     },
     {
-      title: "Social Sharing",
-      href: "/account/social-sharing",
+      title: `Social Sharing`,
+      href: `/account/social-sharing`,
       icon: MdShare,
     },
     {
-      title: "Custom Domain",
-      href: "/account/custom-domain",
+      title: `Custom Domain`,
+      href: `/account/custom-domain`,
       icon: MdDomain,
     },
 
@@ -105,40 +118,39 @@ export const dashboardConfig: DashboardConfig = {
     // },
 
     {
-      title: "Help & Support",
-      isTitle: true
+      title: `Help & Support`,
+      isTitle: true,
     },
     {
-      title: "Knowledge Base",
-      href: "/account/knowledge-base",
+      title: `Knowledge Base`,
+      href: `/account/knowledge-base`,
       icon: MdLibraryBooks,
     },
     {
-      title: "FAQ",
-      href: "/account/faq",
+      title: `FAQ`,
+      href: `/account/faq`,
       icon: MdQuestionAnswer,
     },
     {
-      title: "Support Ticket",
-      href: "/account/support",
+      title: `Support Ticket`,
+      href: `/account/support`,
       icon: MdContactSupport,
     },
     {
-      title: "Community",
-      href: "/account/community-forum",
+      title: `Community`,
+      href: `/account/community-forum`,
       icon: MdGroup,
     },
     {
-      title: "Contact Us",
-      href: "/account/contact-us",
+      title: `Contact Us`,
+      href: `/account/contact-us`,
       icon: MdMail,
     },
   ],
-}
+};
 /**
  * Second version
  */
-
 
 // SETTINGS
 

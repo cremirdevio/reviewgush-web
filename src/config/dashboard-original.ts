@@ -1,73 +1,87 @@
-import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
+import {
+  FaAddressCard,
+  FaChartArea,
+  FaCloudDownloadAlt,
+  FaCommentAlt,
+  FaGlobe,
+  FaLink,
+  FaPlug,
+  FaQuestion,
+  FaShare,
+  FaTags,
+  FaTh,
+  FaThumbsUp,
+  FaTicketAlt,
+  FaUsers,
+  FaWpforms,
+} from "react-icons/fa";
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
-  mainNav: [
-
-  ],
+  mainNav: [],
   sidebarNav: [
     {
-      title: "Collect",
-      isTitle: true
+      title: `Collect`,
+      isTitle: true,
     },
     {
-      title: "Forms",
-      href: "/account/forms",
+      title: `Forms`,
+      href: `/account/forms`,
       icon: FaWpforms,
     },
     {
-      title: "Import Reviews",
-      href: "/account/import-reviews",
+      title: `Import Reviews`,
+      href: `/account/import-reviews`,
       icon: FaCloudDownloadAlt,
     },
 
     {
-      title: "Manage",
-      isTitle: true
+      title: `Manage`,
+      isTitle: true,
     },
     {
-      title: "Reviews",
-      href: "/account/reviews",
+      title: `Reviews`,
+      href: `/account/reviews`,
       icon: FaThumbsUp,
     },
     {
-      title: "Tags",
-      href: "/account/tags",
+      title: `Tags`,
+      href: `/account/tags`,
       icon: FaTags,
     },
     {
-      title: "Integrations",
-      href: "/account/integrations",
-      icon: FaPlug,//fa-puzzle-piece, plug, link, share-alt
+      title: `Integrations`,
+      href: `/account/integrations`,
+      icon: FaPlug, //fa-puzzle-piece, plug, link, share-alt
     },
     {
-      title: "Analytics",
-      href: "/account/analytics",
+      title: `Analytics`,
+      href: `/account/analytics`,
       icon: FaChartArea,
     },
 
     {
-      title: "Share",
-      isTitle: true
+      title: `Share`,
+      isTitle: true,
     },
     {
-      title: "Widgets",
-      href: "/account/widgets",
+      title: `Widgets`,
+      href: `/account/widgets`,
       icon: FaTh,
     },
     {
-      title: "Landing Page",
-      href: "/account/landing-page",
+      title: `Landing Page`,
+      href: `/account/landing-page`,
       icon: FaGlobe,
     },
     {
-      title: "Social Sharing",
-      href: "/account/social-sharing",
+      title: `Social Sharing`,
+      href: `/account/social-sharing`,
       icon: FaShare,
     },
     {
-      title: "Custom Domain",
-      href: "/account/custom-domain",
+      title: `Custom Domain`,
+      href: `/account/custom-domain`,
       icon: FaLink,
     },
 
@@ -104,40 +118,39 @@ export const dashboardConfig: DashboardConfig = {
     // },
 
     {
-      title: "Help & Support",
-      isTitle: true
+      title: `Help & Support`,
+      isTitle: true,
     },
     {
-      title: "Knowledge Base",
-      href: "/account/knowledge-base",
+      title: `Knowledge Base`,
+      href: `/account/knowledge-base`,
       icon: FaQuestion,
     },
     {
-      title: "FAQ",
-      href: "/account/faq",
+      title: `FAQ`,
+      href: `/account/faq`,
       icon: FaCommentAlt,
     },
     {
-      title: "Support Ticket",
-      href: "/account/support",
+      title: `Support Ticket`,
+      href: `/account/support`,
       icon: FaTicketAlt,
     },
     {
-      title: "Community",
-      href: "/account/community-forum",
+      title: `Community`,
+      href: `/account/community-forum`,
       icon: FaUsers,
     },
     {
-      title: "Contact Us",
-      href: "/account/contact-us",
+      title: `Contact Us`,
+      href: `/account/contact-us`,
       icon: FaAddressCard,
     },
   ],
-}
+};
 /**
  * Second version
  */
-
 
 // SETTINGS
 
@@ -183,4 +196,3 @@ export const dashboardConfig: DashboardConfig = {
 
 // User Voice
 // Feature Requests
-

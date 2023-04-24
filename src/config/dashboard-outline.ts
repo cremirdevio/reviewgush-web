@@ -1,74 +1,87 @@
-import FA, { FaAddressCard, FaChartArea, FaCloudDownloadAlt, FaCommentAlt, FaConnectdevelop, FaGlobe, FaLink, FaPlug, FaPuzzlePiece, FaQuestion, FaSearch, FaShare, FaTags, FaTasks, FaTh, FaThumbsUp, FaTicketAlt, FaUsers, FaWpforms } from 'react-icons/fa';
-import { MdMailOutline, MdOutlineAnalytics, MdOutlineCloudDownload, MdOutlineContactSupport, MdOutlineDomain, MdOutlineExtension, MdOutlineGroup, MdOutlineLabel, MdOutlineLibraryBooks, MdOutlineQuestionAnswer, MdOutlineSelectAll, MdOutlineShare, MdOutlineThumbUp, MdOutlineWeb, MdOutlineWidgets } from 'react-icons/md';
+import {
+  MdMailOutline,
+  MdOutlineAnalytics,
+  MdOutlineCloudDownload,
+  MdOutlineContactSupport,
+  MdOutlineDomain,
+  MdOutlineExtension,
+  MdOutlineGroup,
+  MdOutlineLabel,
+  MdOutlineLibraryBooks,
+  MdOutlineQuestionAnswer,
+  MdOutlineSelectAll,
+  MdOutlineShare,
+  MdOutlineThumbUp,
+  MdOutlineWeb,
+  MdOutlineWidgets,
+} from "react-icons/md";
 import { DashboardConfig } from "@/types";
 
 export const dashboardConfig: DashboardConfig = {
-  mainNav: [
-
-  ],
+  mainNav: [],
   sidebarNav: [
     {
-      title: "Collect",
-      isTitle: true
+      title: `Collect`,
+      isTitle: true,
     },
     {
-      title: "Forms",
-      href: "/account/forms",
+      title: `Forms`,
+      href: `/account/forms`,
       icon: MdOutlineSelectAll,
     },
     {
-      title: "Import Reviews",
-      href: "/account/import-reviews",
+      title: `Import Reviews`,
+      href: `/account/import-reviews`,
       icon: MdOutlineCloudDownload,
     },
 
     {
-      title: "Manage",
-      isTitle: true
+      title: `Manage`,
+      isTitle: true,
     },
     {
-      title: "Reviews",
-      href: "/account/reviews",
+      title: `Reviews`,
+      href: `/account/reviews`,
       icon: MdOutlineThumbUp,
     },
     {
-      title: "Tags",
-      href: "/account/tags",
+      title: `Tags`,
+      href: `/account/tags`,
       icon: MdOutlineLabel,
     },
     {
-      title: "Integrations",
-      href: "/account/integrations",
+      title: `Integrations`,
+      href: `/account/integrations`,
       icon: MdOutlineExtension,
     },
     {
-      title: "Analytics",
-      href: "/account/analytics",
+      title: `Analytics`,
+      href: `/account/analytics`,
       icon: MdOutlineAnalytics,
     },
 
     {
-      title: "Share",
-      isTitle: true
+      title: `Share`,
+      isTitle: true,
     },
     {
-      title: "Widgets",
-      href: "/account/widgets",
+      title: `Widgets`,
+      href: `/account/widgets`,
       icon: MdOutlineWidgets,
     },
     {
-      title: "Landing Page",
-      href: "/account/landing-page",
+      title: `Landing Page`,
+      href: `/account/landing-page`,
       icon: MdOutlineWeb,
     },
     {
-      title: "Social Sharing",
-      href: "/account/social-sharing",
+      title: `Social Sharing`,
+      href: `/account/social-sharing`,
       icon: MdOutlineShare,
     },
     {
-      title: "Custom Domain",
-      href: "/account/custom-domain",
+      title: `Custom Domain`,
+      href: `/account/custom-domain`,
       icon: MdOutlineDomain,
     },
 
@@ -105,40 +118,39 @@ export const dashboardConfig: DashboardConfig = {
     // },
 
     {
-      title: "Help & Support",
-      isTitle: true
+      title: `Help & Support`,
+      isTitle: true,
     },
     {
-      title: "Knowledge Base",
-      href: "/account/knowledge-base",
+      title: `Knowledge Base`,
+      href: `/account/knowledge-base`,
       icon: MdOutlineLibraryBooks,
     },
     {
-      title: "FAQ",
-      href: "/account/faq",
+      title: `FAQ`,
+      href: `/account/faq`,
       icon: MdOutlineQuestionAnswer,
     },
     {
-      title: "Support Ticket",
-      href: "/account/support",
+      title: `Support Ticket`,
+      href: `/account/support`,
       icon: MdOutlineContactSupport,
     },
     {
-      title: "Community",
-      href: "/account/community-forum",
+      title: `Community`,
+      href: `/account/community-forum`,
       icon: MdOutlineGroup,
     },
     {
-      title: "Contact Us",
-      href: "/account/contact-us",
+      title: `Contact Us`,
+      href: `/account/contact-us`,
       icon: MdMailOutline,
     },
   ],
-}
+};
 /**
  * Second version
  */
-
 
 // SETTINGS
 
