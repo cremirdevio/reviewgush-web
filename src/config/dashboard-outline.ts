@@ -13,7 +13,7 @@ import {
   MdOutlineShare,
   MdOutlineThumbUp,
   MdOutlineWeb,
-  MdOutlineWidgets,
+  MdOutlineWidgets
 } from "react-icons/md";
 import { DashboardConfig } from "@/types";
 
@@ -22,67 +22,67 @@ export const dashboardConfig: DashboardConfig = {
   sidebarNav: [
     {
       title: `Collect`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Forms`,
       href: `/account/forms`,
-      icon: MdOutlineSelectAll,
+      icon: MdOutlineSelectAll
     },
     {
       title: `Import Reviews`,
       href: `/account/import-reviews`,
-      icon: MdOutlineCloudDownload,
+      icon: MdOutlineCloudDownload
     },
 
     {
       title: `Manage`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Reviews`,
       href: `/account/reviews`,
-      icon: MdOutlineThumbUp,
+      icon: MdOutlineThumbUp
     },
     {
       title: `Tags`,
       href: `/account/tags`,
-      icon: MdOutlineLabel,
+      icon: MdOutlineLabel
     },
     {
       title: `Integrations`,
       href: `/account/integrations`,
-      icon: MdOutlineExtension,
+      icon: MdOutlineExtension
     },
     {
       title: `Analytics`,
       href: `/account/analytics`,
-      icon: MdOutlineAnalytics,
+      icon: MdOutlineAnalytics
     },
 
     {
       title: `Share`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Widgets`,
       href: `/account/widgets`,
-      icon: MdOutlineWidgets,
+      icon: MdOutlineWidgets
     },
     {
       title: `Landing Page`,
       href: `/account/landing-page`,
-      icon: MdOutlineWeb,
+      icon: MdOutlineWeb
     },
     {
       title: `Social Sharing`,
       href: `/account/social-sharing`,
-      icon: MdOutlineShare,
+      icon: MdOutlineShare
     },
     {
       title: `Custom Domain`,
       href: `/account/custom-domain`,
-      icon: MdOutlineDomain,
+      icon: MdOutlineDomain
     },
 
     // Might move settings to just one page
@@ -119,34 +119,34 @@ export const dashboardConfig: DashboardConfig = {
 
     {
       title: `Help & Support`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Knowledge Base`,
       href: `/account/knowledge-base`,
-      icon: MdOutlineLibraryBooks,
+      icon: MdOutlineLibraryBooks
     },
     {
       title: `FAQ`,
       href: `/account/faq`,
-      icon: MdOutlineQuestionAnswer,
+      icon: MdOutlineQuestionAnswer
     },
     {
       title: `Support Ticket`,
       href: `/account/support`,
-      icon: MdOutlineContactSupport,
+      icon: MdOutlineContactSupport
     },
     {
       title: `Community`,
       href: `/account/community-forum`,
-      icon: MdOutlineGroup,
+      icon: MdOutlineGroup
     },
     {
       title: `Contact Us`,
       href: `/account/contact-us`,
-      icon: MdMailOutline,
-    },
-  ],
+      icon: MdMailOutline
+    }
+  ]
 };
 /**
  * Second version

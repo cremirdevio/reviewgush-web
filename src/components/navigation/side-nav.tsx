@@ -2,7 +2,7 @@ import {
   Drawer,
   DrawerContent,
   DrawerOverlay,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 import { useContext } from "react";
 import SideNavigationContent from "./side-nav-content";

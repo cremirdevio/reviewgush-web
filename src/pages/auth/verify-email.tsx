@@ -5,7 +5,7 @@ import {
   Container,
   Spacer,
   Icon,
-  Center,
+  Center
 } from "@chakra-ui/react";
 import { FaArrowLeft } from "react-icons/fa";
 import AuthLayout from "@/src/components/auth-layout";

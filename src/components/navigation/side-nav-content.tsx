@@ -10,7 +10,7 @@ import {
   MenuDivider,
   MenuItem,
   MenuList,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import SideNavLink from "./side-bar-link";
@@ -20,7 +20,7 @@ type SideNavigationContentProps = Pick<BoxProps, "width" | "maxWidth">;
 
 export default function SideNavigationContent({
   width = [`300px`],
-  maxWidth,
+  maxWidth
 }: SideNavigationContentProps) {
   return (
     <Flex

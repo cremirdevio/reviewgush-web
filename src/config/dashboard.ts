@@ -13,7 +13,7 @@ import {
   MdShare,
   MdThumbUp,
   MdWeb,
-  MdWidgets,
+  MdWidgets
 } from "react-icons/md";
 import { DashboardConfig } from "@/types";
 
@@ -22,67 +22,67 @@ export const dashboardConfig: DashboardConfig = {
   sidebarNav: [
     {
       title: `Collect`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Forms`,
       href: `/account/forms`,
-      icon: MdSelectAll,
+      icon: MdSelectAll
     },
     {
       title: `Import Reviews`,
       href: `/account/import-reviews`,
-      icon: MdCloudDownload,
+      icon: MdCloudDownload
     },
 
     {
       title: `Manage`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Reviews`,
       href: `/account/reviews`,
-      icon: MdThumbUp,
+      icon: MdThumbUp
     },
     {
       title: `Tags`,
       href: `/account/tags`,
-      icon: MdLabel,
+      icon: MdLabel
     },
     {
       title: `Integrations`,
       href: `/account/integrations`,
-      icon: MdExtension,
+      icon: MdExtension
     },
     {
       title: `Analytics`,
       href: `/account/analytics`,
-      icon: MdAnalytics,
+      icon: MdAnalytics
     },
 
     {
       title: `Share`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Widgets`,
       href: `/account/widgets`,
-      icon: MdWidgets,
+      icon: MdWidgets
     },
     {
       title: `Landing Page`,
       href: `/account/landing-page`,
-      icon: MdWeb,
+      icon: MdWeb
     },
     {
       title: `Social Sharing`,
       href: `/account/social-sharing`,
-      icon: MdShare,
+      icon: MdShare
     },
     {
       title: `Custom Domain`,
       href: `/account/custom-domain`,
-      icon: MdDomain,
+      icon: MdDomain
     },
 
     // Might move settings to just one page
@@ -119,34 +119,34 @@ export const dashboardConfig: DashboardConfig = {
 
     {
       title: `Help & Support`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Knowledge Base`,
       href: `/account/knowledge-base`,
-      icon: MdLibraryBooks,
+      icon: MdLibraryBooks
     },
     {
       title: `FAQ`,
       href: `/account/faq`,
-      icon: MdQuestionAnswer,
+      icon: MdQuestionAnswer
     },
     {
       title: `Support Ticket`,
       href: `/account/support`,
-      icon: MdContactSupport,
+      icon: MdContactSupport
     },
     {
       title: `Community`,
       href: `/account/community-forum`,
-      icon: MdGroup,
+      icon: MdGroup
     },
     {
       title: `Contact Us`,
       href: `/account/contact-us`,
-      icon: MdMail,
-    },
-  ],
+      icon: MdMail
+    }
+  ]
 };
 /**
  * Second version

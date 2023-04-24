@@ -6,7 +6,7 @@ import {
   HStack,
   Td,
   Text,
-  Tr,
+  Tr
 } from "@chakra-ui/react";
 import Ratings from "./ratings";
 

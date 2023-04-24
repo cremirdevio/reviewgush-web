@@ -13,7 +13,7 @@ import {
   Flex,
   HStack,
   Icon,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import {
   MdOutlineAttribution,
@@ -23,7 +23,7 @@ import {
   MdOutlineHandshake,
   MdOutlineLanguage,
   MdOutlineMessage,
-  MdOutlineSettings,
+  MdOutlineSettings
 } from "react-icons/md";
 
 export default function Form() {

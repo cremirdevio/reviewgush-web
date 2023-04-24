@@ -6,7 +6,7 @@ import {
   Container,
   Checkbox,
   Stack,
-  Spacer,
+  Spacer
 } from "@chakra-ui/react";
 import { FaApple, FaGoogle } from "react-icons/fa";
 import AuthLayout from "@/src/components/auth-layout";

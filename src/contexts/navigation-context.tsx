@@ -8,11 +8,11 @@ interface NavigationContextProp {
 
 export const NavigationContext = createContext<NavigationContextProp>({
   sideBarIsOpen: false,
-  toggleSideBar: () => console.log,
+  toggleSideBar: () => console.log
 });
 
 export default function NavigationProvider({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -22,7 +22,7 @@ export default function NavigationProvider({
     <NavigationContext.Provider
       value={{
         sideBarIsOpen: isOpen,
-        toggleSideBar: onToggle,
+        toggleSideBar: onToggle
       }}
     >
       {children}

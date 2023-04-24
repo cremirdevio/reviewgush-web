@@ -4,7 +4,7 @@ import {
   Icon,
   LinkBox,
   LinkOverlay,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SidebarNavItem } from "@/types";
@@ -35,7 +35,7 @@ export default function SideNavLink({ navItem }: SideNavLinkProp) {
         _hover={{
           bgColor: `green.100`,
           borderRadius: `md`,
-          textDecoration: `none`,
+          textDecoration: `none`
         }}
         py={`6px`}
         pl={`8px`}

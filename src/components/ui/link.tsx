@@ -1,7 +1,7 @@
 import NextLink from "next/link";
 import {
   Link as ChakraLink,
-  LinkProps as ChakraLinkProps,
+  LinkProps as ChakraLinkProps
 } from "@chakra-ui/react";
 
 interface NextChakraLinkProps extends ChakraLinkProps {

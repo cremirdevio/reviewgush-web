@@ -15,7 +15,7 @@ const NotFound = ({
   title,
   message,
   buttonText,
-  onButtonClick,
+  onButtonClick
 }: NotFoundProps) => {
   return (
     <Center flexDir={`column`}>

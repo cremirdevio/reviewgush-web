@@ -5,7 +5,7 @@ import {
   Tfoot,
   Thead,
   useBreakpointValue,
-  SimpleGrid,
+  SimpleGrid
 } from "@chakra-ui/react";
 import SingleReviewTableItem from "./single-review-table-item";
 import ReviewTableHeader from "./review-table-head";
@@ -23,7 +23,7 @@ export default function ListReviews() {
   );
   const variant = useBreakpointValue<ListReviewsVariant>({
     base: `grid`,
-    lg: `table`,
+    lg: `table`
   });
 
   console.log(variant);

@@ -16,7 +16,7 @@ import {
   MenuItem,
   MenuList,
   Text,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import React from "react";
 import { FaChevronDown, FaPlus, FaSearch } from "react-icons/fa";
@@ -28,44 +28,44 @@ const tagsList = [
   {
     label: `enhancement`,
     description: `New feature or request`,
-    color: `yellow`,
+    color: `yellow`
   },
   {
     label: `documentation`,
     description: `Improvements or additions to documentation`,
-    color: `purple`,
+    color: `purple`
   },
   {
     label: `duplicate`,
     description: `This issue or pull request already exists`,
-    color: `gray`,
+    color: `gray`
   },
   {
     label: `good first issue`,
     description: `Good for newcomers`,
-    color: `green`,
+    color: `green`
   },
   {
     label: `help wanted`,
     description: `Extra attention is needed`,
-    color: `orange`,
+    color: `orange`
   },
   { label: `invalid`, description: `This doesn't seem right`, color: `cyan` },
   {
     label: `question`,
     description: `Further information is requested`,
-    color: `teal`,
+    color: `teal`
   },
   {
     label: `wontfix`,
     description: `This will not be worked on`,
-    color: `pink`,
+    color: `pink`
   },
   {
     label: `feature request`,
     description: `A new feature or request`,
-    color: `blue`,
-  },
+    color: `blue`
+  }
 ];
 
 export default function Tags() {

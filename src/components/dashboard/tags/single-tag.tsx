@@ -10,7 +10,7 @@ import {
   MenuItem,
   MenuList,
   Text,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 import { FaEllipsisH } from "react-icons/fa";
 
@@ -23,7 +23,7 @@ interface Tag {
 export default function SingleTag({ item }: { item: Tag }) {
   const [isLargerThan600] = useMediaQuery(`(min-width: 600px)`, {
     ssr: true,
-    fallback: false, // return false on the server, and re-evaluate on the client side
+    fallback: false // return false on the server, and re-evaluate on the client side
   });
 
   return (

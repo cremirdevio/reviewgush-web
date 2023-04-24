@@ -13,7 +13,7 @@ import {
   FaThumbsUp,
   FaTicketAlt,
   FaUsers,
-  FaWpforms,
+  FaWpforms
 } from "react-icons/fa";
 import { DashboardConfig } from "@/types";
 
@@ -22,67 +22,67 @@ export const dashboardConfig: DashboardConfig = {
   sidebarNav: [
     {
       title: `Collect`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Forms`,
       href: `/account/forms`,
-      icon: FaWpforms,
+      icon: FaWpforms
     },
     {
       title: `Import Reviews`,
       href: `/account/import-reviews`,
-      icon: FaCloudDownloadAlt,
+      icon: FaCloudDownloadAlt
     },
 
     {
       title: `Manage`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Reviews`,
       href: `/account/reviews`,
-      icon: FaThumbsUp,
+      icon: FaThumbsUp
     },
     {
       title: `Tags`,
       href: `/account/tags`,
-      icon: FaTags,
+      icon: FaTags
     },
     {
       title: `Integrations`,
       href: `/account/integrations`,
-      icon: FaPlug, //fa-puzzle-piece, plug, link, share-alt
+      icon: FaPlug //fa-puzzle-piece, plug, link, share-alt
     },
     {
       title: `Analytics`,
       href: `/account/analytics`,
-      icon: FaChartArea,
+      icon: FaChartArea
     },
 
     {
       title: `Share`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Widgets`,
       href: `/account/widgets`,
-      icon: FaTh,
+      icon: FaTh
     },
     {
       title: `Landing Page`,
       href: `/account/landing-page`,
-      icon: FaGlobe,
+      icon: FaGlobe
     },
     {
       title: `Social Sharing`,
       href: `/account/social-sharing`,
-      icon: FaShare,
+      icon: FaShare
     },
     {
       title: `Custom Domain`,
       href: `/account/custom-domain`,
-      icon: FaLink,
+      icon: FaLink
     },
 
     // Might move settings to just one page
@@ -119,34 +119,34 @@ export const dashboardConfig: DashboardConfig = {
 
     {
       title: `Help & Support`,
-      isTitle: true,
+      isTitle: true
     },
     {
       title: `Knowledge Base`,
       href: `/account/knowledge-base`,
-      icon: FaQuestion,
+      icon: FaQuestion
     },
     {
       title: `FAQ`,
       href: `/account/faq`,
-      icon: FaCommentAlt,
+      icon: FaCommentAlt
     },
     {
       title: `Support Ticket`,
       href: `/account/support`,
-      icon: FaTicketAlt,
+      icon: FaTicketAlt
     },
     {
       title: `Community`,
       href: `/account/community-forum`,
-      icon: FaUsers,
+      icon: FaUsers
     },
     {
       title: `Contact Us`,
       href: `/account/contact-us`,
-      icon: FaAddressCard,
-    },
-  ],
+      icon: FaAddressCard
+    }
+  ]
 };
 /**
  * Second version
