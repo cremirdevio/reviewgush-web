@@ -39,7 +39,7 @@ export default function Tags() {
                     <Button variant='primary' leftIcon={<Icon as={FaPlus} />}>New Tag</Button>
                 </HStack>
 
-                <FormInput mb={"3"} leftIcon={<Icon as={FaSearch} />} placeholder='Search Reviews by name, email or review keyword' />
+                <FormInput mb={"3"} leftIcon={<Icon as={FaSearch} />} placeholder='Search all tags' />
                 <ClearSearch />
 
                 <Card variant={"outline"} my={"4"}>
@@ -48,7 +48,7 @@ export default function Tags() {
                         <Menu>
                             <MenuButton as={Box}>
                                 <HStack color={"gray.500"}>
-                                    <Text fontWeight={"bold"} fontSize={"lg"}>Sort</Text>
+                                    <Text fontWeight={"bold"} fontSize={["md","lg"]}>Sort</Text>
                                     <Icon as={FaChevronDown} boxSize={"3"} />
                                 </HStack>
                             </MenuButton>
