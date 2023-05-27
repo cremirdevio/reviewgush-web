@@ -1,3 +1,4 @@
+import React, { forwardRef, Ref } from "react";
 import {
   FormControl,
   Input,
@@ -6,29 +7,40 @@ import {
   InputProps,
   InputRightElement
 } from "@chakra-ui/react";
-import React from "react";
 
-interface FormInput extends InputProps {
+interface FormInputProps extends InputProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
 }
 
-export default function FormInput({
-  leftIcon: leftPart,
-  rightIcon: rightPart,
-  ...inputProps
-}: FormInput) {
-  return (
-    <FormControl>
-      <InputGroup size={inputProps.size ?? `lg`}>
-        {leftPart && <InputLeftElement>{leftPart}</InputLeftElement>}
-        <Input
-          focusBorderColor={`orange.500`}
-          fontSize={[`sm`]}
-          {...inputProps}
-        />
-        {rightPart && <InputRightElement>{rightPart}</InputRightElement>}
-      </InputGroup>
-    </FormControl>
-  );
-}
+const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
+  (
+    { leftIcon: leftPart, rightIcon: rightPart, ...inputProps },
+    ref: Ref<HTMLInputElement>
+  ) => {
+    return (
+      <FormControl>
+        <InputGroup size={inputProps.size ?? `lg`}>
+          {leftPart && (
+            <InputLeftElement pointerEvents="none">{leftPart}</InputLeftElement>
+          )}
+          <Input
+            focusBorderColor={`orange.500`}
+            fontSize={[`sm`]}
+            {...inputProps}
+            ref={ref}
+          />
+          {rightPart && (
+            <InputRightElement pointerEvents="none">
+              {rightPart}
+            </InputRightElement>
+          )}
+        </InputGroup>
+      </FormControl>
+    );
+  }
+);
+
+FormInput.displayName = `FormInput`;
+
+export default FormInput;
