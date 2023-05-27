@@ -11,25 +11,24 @@ import {
   DrawerOverlay,
   Flex,
   HStack,
-  Heading,
-  Icon,
   IconButton,
   Td,
   Text,
-  Tooltip,
   Tr,
   useBoolean
 } from "@chakra-ui/react";
 import Ratings from "./ratings";
 import Button from "../../ui/button";
-import { MdClose, MdOutlineEdit, MdOutlineShare } from "react-icons/md";
+import { MdOutlineEdit } from "react-icons/md";
 import { MdDeleteOutline } from "react-icons/md";
 import Badge from "../../ui/badge";
-import TagPopoverForm from "./tag-popover-form";
-import { FaTimesCircle } from "react-icons/fa";
+import ReviewDetail from "./review-details";
+import EditReview from "./edit-review";
 
 export default function SingleReviewTableItem() {
   const [showFullDetails, { on, off }] = useBoolean(false);
+  const [editReview, { off: onClodeEditor, on: onOpenEditor }] =
+    useBoolean(false);
 
   return (
     <Tr
@@ -67,11 +66,11 @@ export default function SingleReviewTableItem() {
           isOpen={showFullDetails}
           placement="right"
           onClose={off}
-          size={`sm`}
+          size={`md`}
           // finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent>
+          <DrawerContent position={`relative`}>
             <DrawerCloseButton />
             <DrawerHeader>
               <ButtonGroup>
@@ -81,6 +80,7 @@ export default function SingleReviewTableItem() {
                   aria-label="edit review"
                   color={`gray.500`}
                   icon={<MdOutlineEdit size={`16`} />}
+                  onClick={onOpenEditor}
                 />
                 <IconButton
                   size={`sm`}
@@ -92,67 +92,8 @@ export default function SingleReviewTableItem() {
             </DrawerHeader>
 
             <DrawerBody>
-              <Flex gap={`4`} alignItems={`center`} mb={`4`}>
-                <Avatar
-                  name="Joseph Ajibodu"
-                  src="https://avatars.githubusercontent.com/u/78092933?v=4"
-                  size={`lg`}
-                  borderWidth={`4px`}
-                  borderColor={`gray.100`}
-                />
-                <Flex flexDir={`column`} alignItems={`flex-start`}>
-                  <Text fontWeight={`bold`}> Joseph Ajibodu</Text>
-                  <Text whiteSpace={`pre-wrap`}> Co-founder of ReviewGush</Text>
-                </Flex>
-              </Flex>
-              <Ratings rating={4.5} />
-              <Text whiteSpace={`pre-wrap`}>
-                Hey! It&apos;s Olly here, co-founder of Senja. This is a dummy
-                review that&apos;ll show you how a testimonial works 😄.
-              </Text>
-
-              {/* Date */}
-              <Text fontSize={`md`} color={`gray.500`} my={`2`}>
-                April 23rd, 2023
-              </Text>
-
-              {/* Tags List */}
-              <Flex
-                gap={`2`}
-                flexWrap={`wrap`}
-                bg={`gray.50`}
-                px={`2`}
-                py={`3`}
-                borderRadius={`2xl`}
-              >
-                {Array.from(`1234567890`).map((_, index) => (
-                  <Badge key={index} variant={`outline`}>
-                    label {_}
-                    <Icon cursor={`pointer`} ml={`1`} as={FaTimesCircle} />
-                  </Badge>
-                ))}
-
-                {/* <Badge colorScheme="green">
-                  <Icon mr={`1`} as={MdLabelOutline} />
-                  Add a tag
-                </Badge> */}
-
-                <TagPopoverForm />
-              </Flex>
-
-              {/* Actions List: Do more with your review */}
-              <Heading fontWeight={`normal`} fontSize={`2xl`} mt={`8`} mb={`4`}>
-                Review Actions
-              </Heading>
-              {/* Share - Embed - Generate Image */}
-              <ButtonGroup>
-                <Tooltip label="Share Review">
-                  <IconButton
-                    icon={<MdOutlineShare />}
-                    aria-label="Share review"
-                  />
-                </Tooltip>
-              </ButtonGroup>
+              <ReviewDetail />
+              <EditReview show={editReview} onClose={onClodeEditor} />
             </DrawerBody>
 
             <DrawerFooter>

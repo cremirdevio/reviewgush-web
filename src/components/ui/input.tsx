@@ -1,6 +1,7 @@
 import React, { forwardRef, Ref } from "react";
 import {
   FormControl,
+  FormLabel,
   Input,
   InputGroup,
   InputLeftElement,
@@ -11,15 +12,17 @@ import {
 interface FormInputProps extends InputProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
+  label?: string;
 }
 
 const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
   (
-    { leftIcon: leftPart, rightIcon: rightPart, ...inputProps },
+    { leftIcon: leftPart, rightIcon: rightPart, label, ...inputProps },
     ref: Ref<HTMLInputElement>
   ) => {
     return (
       <FormControl>
+        {label && <FormLabel>{label}</FormLabel>}
         <InputGroup size={inputProps.size ?? `lg`}>
           {leftPart && (
             <InputLeftElement pointerEvents="none">{leftPart}</InputLeftElement>
@@ -27,6 +30,7 @@ const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
           <Input
             focusBorderColor={`orange.500`}
             fontSize={[`sm`]}
+            color={`black`}
             {...inputProps}
             ref={ref}
           />

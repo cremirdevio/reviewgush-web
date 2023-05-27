@@ -6,7 +6,7 @@ const Badge = forwardRef<HTMLElement, BadgeProps>(
     return (
       <ChakraBadge
         display={`inline-flex`}
-        borderRadius={`2xl`}
+        borderRadius={`md`}
         alignItems={`center`}
         textTransform={`none`}
         py={`0.5`}
